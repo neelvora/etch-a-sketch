@@ -3,14 +3,42 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Etch A Sketch</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <script src = "script.js" defer></script>
     </head>
     <body>
-
+    
+        <header class ="header"> Etch A Sketch</header>
+        
+        <main class ="main">
+            <div class="settings">
+                <input id="colorSelector" type="color" value="#000000"/>
+                <div class="currentMode"></div>
+                <button id="colorButton">Color Mode</button>
+                <button id="randomizeButton">Randomize</button>
+                <button id="gridLinesButton">Grid Lines</button>
+                <button id="eraserButton">Eraser</button>
+                <button id="clearButton">Clear</button>
+                <div id="sizeValue" class="sizeValue">Current Size:<br> 16 x 16</div>
+                <input id="sizeBar" type="range" value="16" min="1" max="64" step = "4"/>
+            </div>
+            <div id="grid" class="grid"> </div>
+        </main>
+        
+        <footer class="footer">
+            <p>
+            Copyright ©
+            <script>
+                new Date().getFullYear()
+            </script>
+        Neel Vora 
+        </p> 
+        <a href="https://github.com/neelvora">Github
+        </a>
+        </footer>
         
         <script src="" async defer></script>
     </body>

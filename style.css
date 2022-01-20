@@ -1,5 +1,106 @@
-* {
-    border: solid black 1px;
+.gridPiece {
+    padding: 1em;
+    border: 1px solid #ddd;
+    /*(border: none;*/
+}
+
+.gridLineToggle {
+    border: none;
+}
+
+body {
     display: flex;
     flex-direction: column;
+    margin: .5vmax;
+    background-image: url(background-image.jpeg);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 1vmax;
+    font-size: 3vmax;
+    color: #D5AD6D;
+    /*if no support for background-clip*/
+    background: -webkit-linear-gradient(transparent, transparent), -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%, rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%, rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%, rgba(213, 173, 109, 1) 100%);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main {
+    display: flex;
+    padding: 1vmax;
+    justify-content: center;
+    align-items: center;
+    gap: 5vmax;
+    flex-flow: wrap;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vmax;
+    width: 25vmax;
+    text-align: center;
+}
+
+.sizeValue {
+    color: #D5AD6D;
+    /*if no support for background-clip*/
+    background: -webkit-linear-gradient(transparent, transparent), -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%, rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%, rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%, rgba(213, 173, 109, 1) 100%);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.grid {
+    display: grid;
+    background-color: white;
+}
+
+#colorSelector {
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #D5AD6D;
+    /*if no support for background-clip*/
+    background: -webkit-linear-gradient(transparent, transparent), -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%, rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%, rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%, rgba(213, 173, 109, 1) 100%);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    text-align: center;
+    color: navy;
+    font-weight: bold;
+    font-size: 15px;
+    background: -moz-linear-gradient();
+}
+
+button.active {
+    background-color: gray;
+}
+
+button:hover {
+    color: #D5AD6D;
+    /*if no support for background-clip*/
+    background: -webkit-linear-gradient(transparent, transparent), -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%, rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%, rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%, rgba(213, 173, 109, 1) 100%);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
